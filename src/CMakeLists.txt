@@ -92,6 +92,7 @@ endif()
 add_library(glfw ${glfw_SOURCES} ${glfw_HEADERS})
 set_target_properties(glfw PROPERTIES
                       OUTPUT_NAME ${GLFW_LIB_NAME}
+                      LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
                       VERSION ${GLFW_VERSION}
                       SOVERSION ${GLFW_VERSION_MAJOR}
                       POSITION_INDEPENDENT_CODE ON
